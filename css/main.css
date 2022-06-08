@@ -704,8 +704,6 @@ ul {
   margin: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
-  -ms-flex-preferred-size: Calc(-5%);
-      flex-basis: Calc(-5%);
 }
 
 .advantages__info {
@@ -721,6 +719,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   -webkit-box-pack: center;
