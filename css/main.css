@@ -77,17 +77,19 @@ ul {
   list-style-type: none;
 }
 
-.section,
-.our-team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1169px) {
   .section,
   .our-team-section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .section,
+  .our-team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
