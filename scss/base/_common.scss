@@ -22,7 +22,7 @@ p {
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
@@ -33,12 +33,16 @@ ul {
 .our-team-section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .page-header {
   border: 1px solid var(--border-header-color);
 }
-
 
 .site-nav .current {
   color: var(--focus-color-text);
@@ -48,4 +52,3 @@ ul {
   background-color: var(--focus-color-text);
   color: var(--white-color-text);
 }
-
