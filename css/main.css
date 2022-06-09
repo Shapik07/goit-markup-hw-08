@@ -901,15 +901,49 @@ ul {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .our-team__title {
+    margin-bottom: 30px;
+  }
+}
+
 .our-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .our-team__list {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    width: 738px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__list {
+    width: 1200px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .our-team-card {
@@ -920,8 +954,25 @@ ul {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.our-team-card:not(:last-child) {
-  margin-right: 16px;
+@media screen and (min-width: 480px) {
+  .our-team-card {
+    width: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-card {
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 2);
+        flex-basis: calc((100% - 3 * 30px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team-card:not(:last-child) {
+    margin-right: 16px;
+  }
 }
 
 .our-team-card__name {
@@ -933,15 +984,26 @@ ul {
 }
 
 .our-team-card__workers {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.18;
+  text-align: center;
   letter-spacing: 0.03em;
-  color: var(--header-color-text);
-  padding-bottom: 10px;
+  color: #212121;
+  margin-bottom: 10px;
 }
 
 .our-team-card__position {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
   margin-bottom: 16px;
 }
 
@@ -993,6 +1055,10 @@ ul {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+.our-team-card__photo {
+  width: 450px;
 }
 
 .regular-clients__title {
