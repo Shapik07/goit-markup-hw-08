@@ -903,6 +903,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .our-team__title {
+    font-size: 28px;
     margin-bottom: 30px;
   }
 }
@@ -1065,11 +1066,16 @@ ul {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   color: #212121;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .regular-clients__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
 
 .regular-clients__list {
@@ -1087,14 +1093,14 @@ ul {
           align-items: center;
   gap: 30px;
   cursor: pointer;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .regular-clients__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
-  height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1111,6 +1117,27 @@ ul {
 
 .regular-clients__item:hover, .regular-clients__item:focus {
   border-color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .regular-clients__item {
+    width: 210px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .regular-clients__item {
+    width: 226px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-clients__item {
+    -ms-flex-preferred-size: calc((100% - 5 * 30px) / 6);
+        flex-basis: calc((100% - 5 * 30px) / 6);
+  }
 }
 
 .regular-clients__item:hover .regular-clients__logo,
