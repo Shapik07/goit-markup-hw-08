@@ -278,12 +278,43 @@
           <ul class="our-team__list">
             <li class="our-team-card">
               <picture>
+                <source
+                @media="(min-width: 1200px)"
+                srcset="./images/team/webp/демьяненко_игорь_big.webp 1x,
+                ./images/team/webp/демьяненко_игорь_big@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 1200px)"
+                srcset="./images/team/webp/демьяненко_игорь_big.jpg 1x,
+                ./images/team/webp/демьяненко_игорь_big@2x.jpg 2x"
+                 type="image/jpg" />
+                 <source
+                @media="(min-width: 768px)"
+                srcset="./images/team/webp/демьяненко_игорь_middle.webp 1x,
+                ./images/team/webp/демьяненко_игорь_middle@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 768px)"
+                srcset="./images/team/webp/демьяненко_игорь_middle.jpg 1x,
+                ./images/team/webp/демьяненко_игорь_middle@2x.jpg 2x"
+                 type="image/jpg" />
+                 <source
+                @media="(max-width: 767px)"
+                srcset="./images/team/webp/демьяненко_игорь_small.webp 1x,
+                ./images/team/webp/демьяненко_игорь_small@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(max-width: 767px)"
+                srcset="./images/team/webp/демьяненко_игорь_small.jpg 1x,
+                ./images/team/webp/демьяненко_игорь_small@2x.jpg 2x"
+                 type="image/jpg" />
                 <img
                 src="./images/team/демьяненко_игорь_small.jpg"
                 alt="Демьяненко Игорь"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 class="our-team-card__photo"
+                loading="lazy"
               />
               </picture>
               <div class="our-team-card__name">
@@ -338,13 +369,46 @@
               </div>
             </li>
             <li class="our-team-card">
+             <picture> 
+               <source
+                @media="(min-width: 1200px)"
+                srcset="./images/team/webp/репина_ольга_big.webp 1x,
+                ./images/team/webp/репина_ольга_big@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 1200px)"
+                srcset="./images/team/репина_ольга_big.jpg 1x,
+                ./images/team/репина_ольга_big@2x.jpg 2x"
+                 type="image/jpg" />
+                 <source
+                @media="(min-width: 768px)"
+                srcset="./images/team/webp/репина_ольга_middle.webp 1x,
+                ./images/team/webp/репина_ольга_middle@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 768px)"
+                srcset="./images/team/team/репина_ольга_middle.jpg 1x,
+                ./images/team/репина_ольга_middle@2x.jpg 2x"
+                 type="image/jpg" />
+                 <source
+                @media="(max-width: 767px)"
+                srcset="./images/team/webp/репина_ольга_small.webp 1x,
+                ./images/team/webp/репина_ольга_small@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(max-width: 767px)"
+                srcset="./images/team/team/репина_ольга_small.jpg 1x,
+                ./images/team/репина_ольга_small@2x.jpg 2x"
+                 type="image/jpg" />
               <img
                 src="./images/team/репина_ольга_small.jpg"
                 alt="Репина Ольга"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 class="our-team-card__photo"
+                loading="lazy"
               />
+            </picture>
               <div class="our-team-card__name">
                 <h3 class="our-team-card__workers">Ольга Репина</h3>
                 <p lang="en" class="our-team-card__position">Frontend Developer</p>
@@ -393,13 +457,46 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
+              <picture>
+                <source
+                @media="(min-width: 1200px)"
+                srcset="./images/team/webp/тарасов_николай_big.webp 1x,
+                ./images/team/webp/тарасов_николай_big@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 1200px)"
+                srcset="./images/team/тарасов_николай_big.jpg 1x,
+                ./images/team/тарасов_николай_big@2x.jpg 2x"
+                 type="image/jpg" />
+                 <source
+                @media="(min-width: 768px)"
+                srcset="./images/team/webp/тарасов_николай_middle.webp 1x,
+                ./images/team/webp/тарасов_николай_middle@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 768px)"
+                srcset="./images/team/тарасов_николай_middle.jpg 1x,
+                ./images/team/тарасов_николай_middle@2x.jpg 2x"
+                 type="image/jpg" />
+                 <source
+                @media="(max-width: 767px)"
+                srcset="./images/team/webp/тарасов_николай_small.webp 1x,
+                ./images/team/webp/тарасов_николай_small@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(max-width: 767px)"
+                srcset="./images/team/тарасов_николай_small.jpg 1x,
+                ./images/team/тарасов_николай_small@2x.jpg 2x"
+                 type="image/jpg" />
+                <img
                 src="./images/team/тарасов_николай_small.jpg"
                 alt="Тарасов Николай"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 class="our-team-card__photo"
+                loading="lazy"
               />
+              </picture>
               <div class="our-team-card__name">
                 <h3 class="our-team-card__workers">Коля Тарасов</h3>
                 <p lang="en" class="our-team-card__position">Marketing</p>
@@ -448,13 +545,46 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
+              <picture>
+                 <source
+                @media="(min-width: 1200px)"
+                srcset="./images/team/webp/ермаков_михаил_big.webp 1x,
+                ./images/team/webp/ермаков_михаил_big@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 1200px)"
+                srcset="./images/team/ермаков_михаил_big.jpg 1x,
+                ./images/team/ермаков_михаил_big@2x.jpg 2x"
+                 type="image/jpg" />
+                 <source
+                @media="(min-width: 768px)"
+                srcset="./images/team/webp/ермаков_михаил_middle.webp 1x,
+                ./images/team/webp/ермаков_михаил_middle@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 768px)"
+                srcset="./images/team/ермаков_михаил_middle.jpg 1x,
+                ./images/team/ермаков_михаил_middle@2x.jpg 2x"
+                 type="image/jpg" />
+                 <source
+                @media="(max-width: 767px)"
+                srcset="./images/team/webp/ермаков_михаил_small.webp 1x,
+                ./images/team/webp/ермаков_михаил_small@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(max-width: 767px)"
+                srcset="./images/team/ермаков_михаил_small.jpg 1x,
+                ./images/team/ермаков_михаил_small@2x.jpg 2x"
+                 type="image/jpg" />
+                <img
                 src="./images/team/ермаков_михаил_small.jpg"
                 alt="Ермаков Михаил"
                 width="270"
                 height="260"
                 class="our-team-card__photo"
+                loading="lazy"
               />
+              </picture>
               <div class="our-team-card__name">
                 <h3 class="our-team-card__workers">Михаил Ермаков</h3>
                 <p lang="en" class="our-team-card__position">UI Designer</p>
