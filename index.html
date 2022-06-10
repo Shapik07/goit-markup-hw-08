@@ -237,33 +237,75 @@
           <h3 class="our-work__title">Чем мы занимаемся</h3>
           <ul class="our-work__list">
             <li class="our-work__image">
+              <picture>
+                <source
+                @media="(min-width: 1200px)"
+                srcset="./images/work/webp/img.webp 1x,
+                ./images/work/webp/img@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 1200px)"
+                srcset="./images/work/img.jpg 1x,
+                ./images/work/img@2x.jpg 2x"
+                 type="image/jpg" 
+                 />
               <img
-                src="./images/img.jpg"
+                src="./images/work/img.jpg"
                 alt="руки на клавиатуре и написанный код на мониторе"
                 width="370"
                 height="294"
                 class="our-work__picture"
+                loading="lazy"
               />
+              </picture>
               <p class="our-work__developments">Десктопные приложения</p>
             </li>
             <li class="our-work__image">
-              <img
-                src="./images/img-2.jpg"
+             <picture>
+                  <source
+                @media="(min-width: 1200px)"
+                srcset="./images/work/webp/img-1.webp 1x,
+                ./images/work/webp/img-1@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 1200px)"
+                srcset="./images/work/img-1.jpg 1x,
+                ./images/work/img-1@2x.jpg 2x"
+                 type="image/jpg" 
+                 />
+               <img
+                src="./images/work/img-1.jpg"
                 alt="Телефон и ноутбук"
                 width="370"
                 height="294"
                 class="our-work__picture"
+                loading="lazy"
               />
+             </picture>
               <p class="our-work__developments">Мобильные приложения</p>
             </li>
             <li class="our-work__image">
+              <picture>
+                <source
+                @media="(min-width: 1200px)"
+                srcset="./images/work/webp/img-2.webp 1x,
+                ./images/work/webp/img-2@2x.webp 2x"
+                 type="image/webp" />
+                 <source
+                @media="(min-width: 1200px)"
+                srcset="./images/work/img-2.jpg 1x,
+                ./images/work/img-2@2x.jpg 2x"
+                 type="image/jpg" 
+                 />
               <img
-                src="./images/img-3.jpg"
+                src="./images/work/img-2.jpg"
                 alt="Палитра цветов на планшете"
                 width="370"
                 height="294"
                 class="our-work__picture"
+                loading="lazy"
               />
+              </picture>
               <p class="our-work__developments">Дизайнерские решения</p>
             </li>
           </ul>
