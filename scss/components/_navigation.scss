@@ -1,16 +1,23 @@
 .main-nav {
   display: flex;
   align-items: center;
-  align-items: center;
 }
 
 .site-nav {
   text-decoration: none;
   padding-left: 0px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .site-nav__item {
   margin-right: 50px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav__studio-btn,
@@ -29,18 +36,60 @@
 
 .contacts-nav-header__mail-btn,
 .contacts-nav-header__tel-btn {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
 }
 
-.site-nav,
-.contacts-nav-header {
+.contacts-nav-header__item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.site-nav {
   display: flex;
   margin: 0;
   align-items: center;
   margin-left: auto;
 }
 
+.contacts-nav-header {
+  margin: 0;
+  align-items: center;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .site-nav__item:last-child,
 .contacts-nav-header .item:last-child {
