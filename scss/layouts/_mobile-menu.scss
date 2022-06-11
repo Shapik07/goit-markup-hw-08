@@ -1,13 +1,14 @@
 .menu-container {
-  padding: 15px;
+  
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: #fff;
+  padding: 15px;
   display: none;
-
+  
   &.is-open {
     display: block;
   }
@@ -21,6 +22,7 @@
   margin: 0;
   padding-left: 40px;
   padding-right: auto;
+  margin-bottom: 150px;
 }
 
 .mobile-menu__item:hover,
@@ -45,12 +47,13 @@
 
 .menu-contacts {
   padding-left: 40px;
-  margin-top: auto;
+  margin-bottom: 60px;
 }
 
 .menu-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
+
 
 .menu-contacts__link {
   font-family: "Roboto";
@@ -70,6 +73,10 @@
   padding-right: auto;
 }
 
+.menu-socials__item {
+  padding-top: 10px;
+}
+
 .menu-socials__link {
   font-family: "Roboto";
   font-style: normal;
@@ -80,16 +87,4 @@
   color: #2196f3;
 }
 
-.menu-socials__name {
-  margin-left: 10px;
-}
-
-.menu-socials__name:not(:last-child) {
-  margin-right: 10px;
-}
-
-.menu-socials__line {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-}
 
