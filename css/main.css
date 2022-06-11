@@ -95,6 +95,7 @@ ul {
 
 .page-header {
   border: 1px solid var(--border-header-color);
+  position: relative;
 }
 
 .site-nav .current {
@@ -734,6 +735,7 @@ ul {
   border: none;
   background-color: transparent;
   margin-left: auto;
+  padding-right: 10px;
 }
 
 .menu-btn .icon-close {
@@ -1580,5 +1582,19 @@ footer {
   line-height: 1.88;
   color: var(--contacts-text-color);
   margin-bottom: 16px;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
