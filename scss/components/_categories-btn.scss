@@ -4,10 +4,19 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .categories__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.categories__item {
+  margin-bottom: 15px;
 }
 
 .categories__button {
