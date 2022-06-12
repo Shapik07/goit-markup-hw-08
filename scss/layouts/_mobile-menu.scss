@@ -12,11 +12,10 @@
   &.is-open {
     display: block;
   }
-
   @media (min-width: 768px) {
     display: none;
   }
-}
+ }
 
 .mobile-menu {
   margin: 0;
