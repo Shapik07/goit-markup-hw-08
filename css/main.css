@@ -1745,6 +1745,7 @@ ul {
   padding: 15px;
   display: none;
   padding: 48px 40px;
+  z-index: 900;
 }
 
 .menu-container.is-open {
