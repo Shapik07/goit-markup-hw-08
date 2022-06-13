@@ -856,12 +856,14 @@ ul {
     margin-left: auto;
     margin-right: auto;
     padding-top: 118px;
+    max-width: 360px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
     padding-top: 200px;
+    max-width: 696px;
   }
 }
 
